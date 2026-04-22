@@ -12,7 +12,7 @@ $cnt= 1;
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
-    <title>Studentni tahrirlash</title>
+    <title>Student qo‘shish</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -78,24 +78,12 @@ $cnt= 1;
     <h2>🎓 Student qo‘shish</h2>
 
     <form action="store.php" method="POST">
-
-			  <label for="first_name">Ism</label>
-        <input type="text" id="first_name" value="<?= $student ['first_name']?>" name="first_name"  required>
-
-				<label for="last_name">Familya</label>
-        <input type="text" id="last_name" value="<?= $student ['last_name']?>" name="last_name" required>
-
-        <label for="age">Yosh</label>
-        <input type="number" id="age" value="<?= $student ['age']?>" name="age"  required>
-        
-				<label for="class_name">Sinf</label>
-        <input type="text" id="class_name" value="<?= $student ['class_name']?>" name="class_name"  required>
-
-				<label for="phone">Telefon</label>
-        <input type="text" id="phone" value="<?= $student ['phone']?>"placeholder="+998..." required>
-
-        <label for="adress">Manzil</label>
-        <textarea id="adress" value="<?= $student ['adress']?>" rows="3" required></textarea>
+        <input type="text" name="first_name" placeholder="Ism" required>
+        <input type="text" name="last_name" placeholder="Familiya" required>
+        <input type="number" name="age" placeholder="Yosh" required>
+        <input type="text" name="class_name" placeholder="Sinf (masalan: 7-A)" required>
+        <input type="text" name="phone" placeholder="Telefon raqam">
+        <textarea name="address" placeholder="Manzil"></textarea>
 
         <button type="submit">Saqlash</button>
     </form>

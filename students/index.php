@@ -109,8 +109,8 @@ $cnt = 1;
 		 <td><?= $student['phone'] ?></td>
 		 <td><?= $student['address'] ?></td>
 		 <td class=""actions>
-		     <a href="#" class=""view>Ko'rish</a>
-		     <a href="#" class="edit">Tahrirlash</a>
+		     <a href="show.php?id=<?= $student['id']?>" class=""view>Ko'rish</a>
+		     <a href="edit.php?id=<?= $student['id']?>" class="edit">Tahrirlash</a>
 		     <a href="delete.php?id=<?= $student['id'] ?>" class="delete" onclick="return confirm('O\'chirasizmi!')">O'chirish</a>
        </td>
 			</tr>
